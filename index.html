@@ -1,93 +1,149 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Резюме Белого Медведя" />
+    <meta name="keywords" content="CV, resume, Polar, Bear" />
+    <title>Polar Bear</title>
+    <link rel="stylesheet" href="Styles.css" />
+    <link rel="stylesheet" href="Media.css">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Резюме Олега Сергеева">
-    <meta name="keywords" content="CV, resume, Oleg, Sergeev">
-    <title>Oleg Sergeev</title>
-</head>
+    <script>
+      function digitalClock() {
+        var date = new Date();
+        var hours = date.getHours();
+        var minutes = date.getMinutes();
+        var seconds = date.getSeconds();
+        /* добавление ведущих нулей */
+        if (hours < 10) hours = "0" + hours;
+        if (minutes < 10) minutes = "0" + minutes;
+        if (seconds < 10) seconds = "0" + seconds;
+        document.getElementById("id_clock").innerHTML =
+          hours + ":" + minutes + ":" + seconds;
+        setTimeout("digitalClock()", 1000);
+      }
+    </script>
+  </head>
 
-<body>
+  <body>
+    <div class="container">
+      <div class="info">
+        <img src="Avatar.png" alt="My avatar" class="avatar" />
 
-    <img src="Avatar.png" width="250" alt="My avatar">
- 
-    <h1>Олег Сергеев</h1>
-<aside>
-    <p>
-        Это пробная страница, на которой я учусь работать с HTML и CSS
-    </p>
-</aside>
+        <div class="info-text">
+          <h1>Белый Медведь</h1>
 
-    <h4>Список социальных сетей</h4>
+          <p>Я Белый, я предпочитаю холод и сплю в холодильнике</p>
 
-    <p>
-        <a href="https://vk.com" target="_blank">VK</a>
-        |
-        <a href="https://web.telegram.org/z/" target="_blank">Telegram</a>
-    </p>
-    <hr>
-    <h2>Мои хобби</h2>
+          <p>У меня есть два брата, Гризли и Панда</p>
 
-    <ol>
-        <li>Гитара</li>
-        <li>Катание на лыжах</li>
-        <li>Юриспруденция</li>
-    </ol>
-    <hr>
-    <h2>Опыт работы</h2>
+          <h4>Я в социальных сетях:</h4>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Название работы</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
+          <div class="clockline">
+            <a href="https://vk.com" target="_blank">VK</a>
+            |
+            <a href="https://web.telegram.org" target="_blank">Telegram</a>
 
-        <tbody>
-            <tr>
-                <td>ООО "Ромашка"</td>
-                <td>Юрисконсульт</td>
-                <td>2009-2011</td>
-            </tr>
-            <tr>
-                <td>ООО "Импульс"</td>
-                <td>Начальник юр.отдела</td>
-                <td>2011-2021</td>
-            </tr>
-            <tr>
-                <td>ООО "Рога и копыта"</td>
-                <td>Председатель</td>
-                <td>2021-2022</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h2>Связаться со мной</h2>
-
-    <form action="/">
-        <div>
-            <label for="Your Name">Ваше имя:</label>
-            <input id="Your Name" type="text" placeholder="Введите имя">
+            <div id="id_clock">
+              <script>
+                digitalClock();
+              </script>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div>
-            <label for="Your email">Ваш email:</label>
-            <input id="Your email" type="email" placeholder="Введите email">
-        </div>
+      <div class="card card-1">
+        <h2>Мои хобби</h2>
 
-        <div>
-            <label for="Your message">Ваше сообщение:</label>
-            <br>
-            <textarea name="message" id="Your message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
-        </div>
+        <ol class="olist">
+          <li>Катание на коньках</li>
+          <li>Вождение автомобиля</li>
+          <li>Кулинария</li>
+        </ol>
+      </div>
 
-        <input type="submit" value="Отправить!">       
-    </form>
-</body>
+      <div class="card card-2">
+        <h2>Жизненный опыт</h2>
 
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Вид деятельности</th>
+              <th>Примечание</th>
+              <th>Период</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Охотник</td>
+              <td>Нерпа</td>
+              <td>2009 - 2011</td>
+            </tr>
+            <tr>
+              <td>Научный работник</td>
+              <td>Арктика</td>
+              <td>2011 - 2015</td>
+            </tr>
+            <tr>
+              <td>Актер телешоу</td>
+              <td>Вся правда о медведях</td>
+              <td>2021 - 2022</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card card-3">
+        <h2>Мои достижения</h2>
+        <ul class="ulist">
+          <li>Будучи медвежонком посадил самолет</li>
+          <li>Выучил более 5 языков</li>
+          <li>Получил черный пояс по карате</li>
+        </ul>
+      </div>
+
+      <div class="card card-4">
+        <h2>Связаться со мной</h2>
+
+        <form action="/" class="form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="Your Name">Ваше имя:</label>
+              <input
+                id="Your Name"
+                type="text"
+                placeholder="Введите имя"
+                class="inp"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="Your email">Ваш email:</label>
+              <input
+                id="Your email"
+                type="email"
+                placeholder="Введите email"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="Your message">Ваше сообщение:</label>            
+            <textarea
+              name="message"
+              id="Your message"              
+              rows="5"
+              placeholder="Введите сообщение..."             
+            ></textarea>
+          </div>
+
+          <input type="submit" value="Отправить!" class="btn" />
+        </form>
+      </div>
+    </div>
+  </body>
 </html>

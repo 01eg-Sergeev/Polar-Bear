@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background: #fff;
+    color: #0f141f;
+}
+
+a {
+    color: rgb(67, 143, 214);
+    text-decoration: none;
+    transition: all 0.2s;      
+}
+
+a:hover {
+    color: green;
+    border-bottom: 1px solid;
+    font-size: larger;
+}
+
+a:active {
+    color: blue;
+}
+
+a:visited {
+    color: orange;
+}
+
+a:visited:active {
+    color: blue;
+}
+
+h1 {
+    padding: 15px 0px;
+}
+
+h2 {
+    color: rgb(0, 0, 4);
+    margin-bottom: 10px;
+}
+
+h4 {
+    padding: 10px 0px;
+    font-weight: bold;  
+}
+
+p {
+    padding: 5px 0px;
+}
+
+.clockline {
+   display: flex;
+   margin-left: -2px;
+}
+
+.clockline a {
+    margin: 0 3px;
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+}
+
+.avatar {
+   max-block-size: 220px;
+}
+
+.info {
+    margin: 30px 15px 15px 0;
+    display: flex;    
+}
+
+.info-text {
+    margin-left: 20px;
+    width: 100%;
+}
+
+.info-text p {
+    font-style: italic;
+    font-weight: bold;
+    color: #86898f;
+}
+
+.card {
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.card-1 {
+    background-color: rgba(59, 255, 255, 0.5);
+}
+
+.card-2 {
+    background-color: rgba(236, 125, 5, 0.5);
+}
+
+.card-3 {
+    background-color: rgba(144, 59, 255, 0.5);
+}
+
+.card-4 {
+    background-color: rgba(59, 255, 255, 0.5);
+    margin-bottom: 40px;
+}
+
+.card-4 h2 {
+    text-align: center;
+}
+
+.form {
+    line-height: 1.5em;
+}
+
+.form-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.form-row .form-group {
+    margin-right: 20px;
+    width: 50%;
+}
+
+.form-row .form-group:last-child {
+    margin-right: 0;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group input,
+.form-group textarea {
+    background: rgba(254, 242, 242, 0.731);
+    color: indigo;
+    padding: 3px 5px;
+    border-radius: 5px;
+    border: 1px solid;
+    font-family: "roboto", sans-serif;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn {
+    background: rgba(254, 242, 242, 0.731);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-weight: bold;
+    color: indigo;
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.1s;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+.btn:hover {
+    background: indigo;
+    opacity: 0.8;
+    color: white;
+    border: 1px solid grey;
+}
+
+.btn:active {
+    font-size: 95%;
+    background: indigo;
+    opacity: 0.8;
+    color: white;
+    border: 1px solid grey;
+    margin-left: 0.5%;
+}
+
+::placeholder {
+    color: rgba(76, 0, 130, 0.374);
+    font-family: 'roboto', sans-serif;
+}
+
+:hover::placeholder {
+    color: rgba(76, 0, 130, 0.85);
+}
+
+ol,
+tr,
+ul {
+    line-height: 1.5em;
+}
+
+.olist {
+    margin-left: 20px;
+}
+
+.ulist {
+    list-style: none;
+}
+
+.ulist li {
+    border-bottom: 1px solid rgba(223, 214, 214, 0.731);
+    border-bottom-right-radius: 10px;
+    max-width: 320px;    
+}
+
+.table {
+    width: 100%;
+}
+
+.table td {
+    border: 1px solid rgba(54, 137, 24, 0.556);
+    border-radius: 10px;
+}
+
+.table td:nth-child(1), td:nth-child(2) {
+    padding-left: 10px;
+}
+
+.table td:nth-child(3) {
+    text-align: center;
+}
+
+#id_clock {
+    margin-left: auto;   
+}
